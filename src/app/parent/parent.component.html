@@ -1,0 +1,8 @@
+<h1>Parent Component</h1>
+<button (click)="toggleChild()">Toggle Child</button>
+<button (click)="updateFirstName()">Update First Name</button>
+<input type="text" [(ngModel)]="firstName">
+<hr>
+<app-child *ngIf="isChild" [firstName]="firstName">
+  <h2 #parentContent>This is content from parent</h2>
+</app-child>

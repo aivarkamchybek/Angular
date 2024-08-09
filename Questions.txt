@@ -1,0 +1,26 @@
+Angular Lifecycle Hooks Use Cases:
+ngOnInit: Used for initialization tasks, like setting up data when a component is created.
+ngOnChanges: Detects changes to input properties and reacts to them.
+ngDoCheck: Checks for changes manually, useful for custom change detection.
+ngAfterContentInit: Runs after content (ng-content) is projected into the component.
+ngAfterContentChecked: Runs after the projected content has been checked.
+ngAfterViewInit: Runs after the component’s view and child views are initialized.
+ngAfterViewChecked: Runs after the component’s view and child views are checked.
+ngOnDestroy: Cleans up resources (like subscriptions) before the component is destroyed.
+
+ViewChild vs ViewChildren:
+ViewChild: Gets a single child component or element from the view.
+ViewChildren: Gets multiple child components or elements from the view.
+
+
+ContentChild vs ContentChildren:
+ContentChild: Gets a single child element projected into the component via <ng-content>.
+ContentChildren: Gets multiple child elements projected into the component via <ng-content>.
+
+
+Dependency Injection (DI) Design Pattern:
+What: A pattern where an object receives its dependencies from an external source rather than creating them itself.
+Benefits:
+Decoupling: Reduces dependencies between components, making code easier to manage and test.
+Reusability: Makes it easier to reuse and swap out components.
+Maintainability: Simplifies maintenance and updates by isolating changes
